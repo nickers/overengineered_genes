@@ -1,4 +1,7 @@
-﻿var g= new GenomeForThisSimulation();
-var b = BlobBuilder.NewBlob(g);
+﻿using ConsoleApp1;
+
+var g = new GenomeForThisSimulation();
+var dir = new DirectoryForThisSim();
+var b = dir.GetBlob(g);
 
 Console.WriteLine(b);
